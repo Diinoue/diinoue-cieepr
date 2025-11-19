@@ -2,7 +2,28 @@ package diogo.ciee.cieepr.model;
 
 import java.sql.Date;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "animais")
+
 public class Animal {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Toda vez que gerar um novo animal, faz um auto increment no ID
+    private int id;
+
     private String nome;
     private String descricao;
     private Date datanasc;
@@ -10,16 +31,7 @@ public class Animal {
     private String habitat;
     private String paisorigem;
 
-    public Animal () {}
-        public Animal (String nome, String descricao, Date datanasc, String especie, String habitat, String paisorigem) {
-            this.nome = nome;
-            this.descricao = descricao;
-            this.datanasc = datanasc;
-            this.especie = especie;
-            this.habitat = habitat;
-            this.paisorigem = paisorigem;
-        }
-
+/* 
 //Getters e setters
     // nome    
         public String getNome() {
@@ -63,4 +75,5 @@ public class Animal {
         public void setPaisorigem(String paisorigem) {
             this.paisorigem = paisorigem;
         }
+         */
 }

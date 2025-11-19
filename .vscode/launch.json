@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "CieeprApplication",
+      "request": "launch",
+      "mainClass": "diogo.ciee.cieepr.CieeprApplication",
+      "projectName": "cieepr"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",

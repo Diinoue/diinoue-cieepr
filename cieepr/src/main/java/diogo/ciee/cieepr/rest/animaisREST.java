@@ -26,6 +26,7 @@ public class animaisREST {
 static {
     lista.add(
         new Animal(
+            1,
        "Leão Africano",
   "Rei da selva",
              Date.valueOf("2018-03-15"),
@@ -35,6 +36,7 @@ static {
     );
     lista.add(
         new Animal(
+            2,
        "Tartaruga Gigante",
   "Vive por mais de 100 anos",
              Date.valueOf("1990-07-02"),
@@ -44,6 +46,7 @@ static {
     );
     lista.add(
         new Animal(
+            3,
        "Panda gigante",
   "Alimenta-se de bambu",
              Date.valueOf("2015-11-21"),
